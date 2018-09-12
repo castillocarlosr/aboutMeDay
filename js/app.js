@@ -14,19 +14,26 @@
 //Use prompt for input & ALERT for output.  NO FUNCTIONS
 //Use for & while for question 6 & 7th
 //started 2pm
-/*
-var name = prompt('Expect some yes & no questions.  Let\'s get formality out of the way.  What is your name?');
-console.log(name);
-alert('Nice to meet you ' + name);
+var name = ('Hi there visitor.  What is your name?');
+var carlos = ('Do you know Carlos R. Castillo?');
+var major = ('Was Carlos\'s first major in college Computer Science?')
+//3. Is What degree and career did Carlos have before going back to coding?
+//4. Dog
+//5. Cat
+var nameYou = prompt('Hi there stranger.  What is your name?');
+alert('Nice to meet you ' + nameYou + '.  I guess we\'re not strangers anymore.');
+console.log('User typed ' + nameYou + ' for their name');
 
-var carlos = prompt('Is the amazing student\'s name Carlos?  Please answer YES or NO only.');
+carlos = prompt('Do you know Carlos R. Castillo?');
 var properCarlos = carlos.toUpperCase();
 if ((properCarlos === 'YES') || (properCarlos ==='Y')){
-  alert('That is correct!');
+  alert('Hi there friend!  It is always a pleasure to see you again.');
 } else {
-  alert('We\'ll his name is Carlos.  He is amazing!');
+  alert('You should get to know him.  He is an amazing coder and overall person!');
 }
+console.log('The user said ' + carlos + ' to knowing Carlos.');
 
+/*
 var dog = prompt('Does Carlos have a dog?  Please answer YES or NO only.');
 var properDog = dog.toUpperCase();
 if ((properDog === 'YES') || (properDog ==='Y')){
@@ -74,3 +81,4 @@ console.log('Does Carlos have a cat? ' + cat);
 console.log('Carlos likes to run outside.  Does he take one of his pets with him for a run? ' +run);
 console.log('Does Carlos like pizza? ' + pizza);
 console.log('Was Carlos born in WA state? ' + state);
+*/
