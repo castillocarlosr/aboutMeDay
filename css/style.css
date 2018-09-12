@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(225, 247, 247);
+    /*background-image: url('../img/Sam1.jpg');*/
+}
+header{
+    background-color: aquamarine;
+    color: black;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+h1{
+    font-size: 24px;
+    font-family: fantasy;
+    color: red;
+}
+main{
+    font-size: 18px;
+    color: rgb(53, 10, 10)
+}
+ol{
+    list-style-position: outside;
+    list-style-type: decimal;
+}
+li{
+    margin-left: 11px;
+}
+footer{
+    background-image: url(../img/Sam1.jpg);
+    padding: 150px;
+    font-size: 20px:
+    color: white;
+}
