@@ -1,5 +1,20 @@
 'use strict';
+//Use thoughtful console.log statements throughtout work to assist in debbing
+//COnvert bio into UL example education/work experience
+//consider user experiencen of About Me and guessing gamne.  Make it educational and fun.
+//future plan for job seekers
+//add top ten list at the bottom with ordered list.  example  movies, foods, animals, places
+//5 Yes/NO question
+//6th question is numeric.  How many pokemon have I added to my Pokédex? 333.  
+//Indicate to user if number is too high or low?  Give user 4 chances.
+//add 7th question.  multiple correct answers as array.  Quess state I have lived in?  6 tries.
+// display all possible answers at the end
+//keep tally of total correct numbers.  END tell user with NAME how they did with positive message
 
+//Use prompt for input & ALERT for output.  NO FUNCTIONS
+//Use for & while for question 6 & 7th
+//started 2pm
+/*
 var name = prompt('Expect some yes & no questions.  Let\'s get formality out of the way.  What is your name?');
 console.log(name);
 alert('Nice to meet you ' + name);
