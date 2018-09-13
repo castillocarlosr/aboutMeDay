@@ -20,10 +20,11 @@ var major = ('Was Carlos\'s first major in college Computer Science?');
 var career = ('Carlos holds a Bachelor of Science degree.  Is it in Biology?');
 var dog = ('Does Carlos like dogs?');
 var cat = ('Does Carlos like cats?');
-var pokemon = ('How many types of pokemon are in Carlos Pokedex?  hint: it\'s above 100.');
+var pokemon = ('How many types of pokemon are in Carlos Pokedex?  You have a total of 4 chances.  hint: it\'s above 300.');
 var pokemonNumber = 333;
-var chances = 4;
+var statesLived = ('Guess one state Carlos has lived in?  hint: I have lived in 5 states?  You have 6 tries.');
 
+/*
 var nameYou = prompt(name);
 alert('Nice to meet you ' + nameYou + '.  I guess we\'re not strangers anymore.');
 console.log('User typed ' + nameYou + ' for their name');
@@ -73,22 +74,40 @@ if ((properCatQuestion === 'YES') || (properCatQuestion ==='Y')){
 }
 console.log('User typed ' + catQuestion + ' to Carlos having a cat.');
 
-var pokeQuestion = prompt(pokemon);
-while (chances > 4){
-  if (pokeQuestion == 333) //Used double == instead of triple because 333 might return a string.
-  {
-    alert('You forgot what the hint said.  Try much much much higher.');
+var i = 0;
+while( i < 4 ){
+  var pokeQuestion = prompt(pokemon);
+  if (pokeQuestion < pokemonNumber){
+    alert('You\'re far too low.  Try a higher number.');
+    console.log('You guessed ' + pokeQuestion + ' that is too low.');
   }
-  else if ((pokeQuestion > 100) && (pokeQuestion <=200)){
-    alert('You\'re more than hundred too low.  Try again.');
+  else if (pokeQuestion > pokemonNumber){
+    alert('You\'re guess is too high.  Carlos is not that good yet.');
+    console.log('Your guess of ' + pokeQuestion + ' is too high.');
   }
-  else if ((pokeQuestion >= 300) && (pokeQuestion < 333)){
-    alert('You are very close to my Pokédex number!')
+  else if (pokemonNumber === parseInt(pokeQuestion)){
+    alert('You guessed correctly.  That is amazing.  I have ' + pokeQuestion + ' so far.');
+    console.log('You guessed the correct number. ' + pokeQuestion + ' pokemon.');
+    break;
   }
+    i++;
+}*/
+//add 7th question.  multiple correct answers as array.  Quess state I have lived in?  6 tries.
+// display all possible answers at the end
+//keep tally of total correct numbers.  END tell user with NAME how they did with positive message
+
+//Use prompt for input & ALERT for output.  NO FUNCTIONS
+//Use for & while for question 6 & 7th
+
+var statesArray = ['IL', 'NM', 'NY', 'TX', 'WA'];
+for (i = 0; i < 6; i++){
+  var stateQuestion = prompt(statesLived);
+  if ('IL' )
 }
 
+
 /*
-var pokeQuestion = prompt(pokemon)
+
 
 var state = prompt('Was Carlos born in WA state?');
 var properState = state.toUpperCase();
