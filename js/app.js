@@ -20,8 +20,9 @@ var major = ('Was Carlos\'s first major in college Computer Science?');
 var career = ('Carlos holds a Bachelor of Science degree.  Is it in Biology?');
 var dog = ('Does Carlos like dogs?');
 var cat = ('Does Carlos like cats?');
-var pokemon = ('How many types of pokemon are in Carlos Pokédex?');
+var pokemon = ('How many types of pokemon are in Carlos Pokedex?  hint: it\'s above 100.');
 var pokemonNumber = 333;
+var chances = 4;
 
 var nameYou = prompt(name);
 alert('Nice to meet you ' + nameYou + '.  I guess we\'re not strangers anymore.');
@@ -73,7 +74,18 @@ if ((properCatQuestion === 'YES') || (properCatQuestion ==='Y')){
 console.log('User typed ' + catQuestion + ' to Carlos having a cat.');
 
 var pokeQuestion = prompt(pokemon);
-while ()
+while (chances > 4){
+  if (pokeQuestion == 333) //Used double == instead of triple because 333 might return a string.
+  {
+    alert('You forgot what the hint said.  Try much much much higher.');
+  }
+  else if ((pokeQuestion > 100) && (pokeQuestion <=200)){
+    alert('You\'re more than hundred too low.  Try again.');
+  }
+  else if ((pokeQuestion >= 300) && (pokeQuestion < 333)){
+    alert('You are very close to my Pokédex number!')
+  }
+}
 
 /*
 var pokeQuestion = prompt(pokemon)
