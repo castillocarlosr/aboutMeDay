@@ -13,7 +13,7 @@
 //Use prompt for input & ALERT for output.  NO FUNCTIONS
 //Use for & while for question 6 & 7th
 
-var name = ('Hi there visitor.  What is your name?');
+//var name = ('Hi there visitor.  What is your name?');
 var carlos = ('Do you know Carlos R. Castillo?');
 var major = ('Was Carlos\'s first major in college Computer Science?');
 var career = ('Carlos holds a Bachelor of Science degree.  Is it in Biology?');
@@ -23,19 +23,30 @@ var pokemon = ('How many types of pokemon are in Carlos Pokedex?  You have a tot
 var pokemonNumber = 333;
 var statesLived = ('Guess one state Carlos has lived in?  Use 2 letter abbreviation!  hint: I have lived in 5 states?  You have 6 tries.');
 
-var nameYou = prompt(name);
-alert('Nice to meet you ' + nameYou + '.  I guess we\'re not strangers anymore.');
-console.log('User typed ' + nameYou + ' for their name');
+function question1() {
+ var name = prompt('Hi there visitor.  What is your name?');
+//var nameYou = prompt(name);
+  alert('Nice to meet you ' + name + '.  I guess we\'re not strangers anymore.');
+  console.log('User typed ' + name + ' for their name');
+}
+question1();
 
+
+
+function question2() {
+//var carlos = ('Do you know Carlos R. Castillo?'); 
 var carlosKnow = prompt(carlos);
 var properCarlos = carlosKnow.toUpperCase();
 if ((properCarlos === 'YES') || (properCarlos ==='Y')){
   alert('Hi there friend!  It is always a pleasure to see you again.');
 } else {
   alert('You should get to know him.  He is an amazing coder and overall person!');
-}
+} 
 console.log('The user typed ' + carlosKnow + ' to knowing Carlos.');
+}
+question2();
 
+function question3() {
 var majorQuestion = prompt(major);
 var properMajorQuestion = majorQuestion.toUpperCase();
 if ((properMajorQuestion === 'YES') || (properMajorQuestion ==='Y')){
@@ -44,7 +55,10 @@ if ((properMajorQuestion === 'YES') || (properMajorQuestion ==='Y')){
   alert('Actually, Carlos\'s love of coding was there from the beginning.  Unfortunatly he did change majors after the 1st semeter.');
 }
 console.log('The user typed ' + majorQuestion + ' to Computer Science being his first major.')
+}
+question3();
 
+function question4() {
 var careerQuestion = prompt(career);
 var properCareerQuestion = careerQuestion.toUpperCase();
 if ((properCareerQuestion === 'YES') || (properCareerQuestion ==='Y')){
@@ -53,7 +67,11 @@ if ((properCareerQuestion === 'YES') || (properCareerQuestion ==='Y')){
   alert('Correct.  His degree is actually in Chemistry.');
 }
 console.log('The user typed ' + careerQuestion + ' to Carlos having a Biology degree.');
+}
+question4();
 
+
+function question5() {
 var dogQuestion = prompt(dog);
 var properDogQuestion = dogQuestion.toUpperCase();
 if ((properDogQuestion === 'YES') || (properDogQuestion ==='Y')){
@@ -61,8 +79,11 @@ if ((properDogQuestion === 'YES') || (properDogQuestion ==='Y')){
 } else {
   alert('Well he does have a dog that happens to be cross-eyed and melts your heart!');
 }
-console.log('The user typed ' + dogQuestion + 'to Carlos having a dog.');
+console.log('The user typed ' + dogQuestion + ' to Carlos having a dog.');
+}
+question5();
 
+function question6() {
 var catQuestion = prompt(cat);
 var properCatQuestion = catQuestion.toUpperCase();
 if ((properCatQuestion === 'YES') || (properCatQuestion ==='Y')){
@@ -71,29 +92,37 @@ if ((properCatQuestion === 'YES') || (properCatQuestion ==='Y')){
   alert('Well he does have a cat as well that will show you so much love as well.');
 }
 console.log('User typed ' + catQuestion + ' to Carlos having a cat.');
+}
+question6();
 
 var i = 0;
-while( i < 4 ){
+
+ function question7() {
+ while( i < 4 ){
   var pokeQuestion = prompt(pokemon);
-  if (pokeQuestion < pokemonNumber){
-    alert('You\'re far too low.  Try a higher number.');
-    console.log('You guessed ' + pokeQuestion + ' that is too low.');
-  }
+   if (pokeQuestion < pokemonNumber){
+     alert('You\'re far too low.  Try a higher number.');
+     console.log('You guessed ' + pokeQuestion + ' that is too low.');
+   }
   else if (pokeQuestion > pokemonNumber){
     alert('You\'re guess is too high.  Carlos is not that good yet.');
     console.log('Your guess of ' + pokeQuestion + ' is too high.');
   }
-  else if (pokemonNumber === parseInt(pokeQuestion)){
+  else if (pokemonNumber === parseInt(pokeQuestion)) {
     alert('You guessed correctly.  That is amazing.  I have ' + pokeQuestion + ' so far.');
     console.log('You guessed the correct number. ' + pokeQuestion + ' pokemon.');
-    break;
-  }
+     break;
+    }
   i++;
-}
-var i = 0;
-var statesArray = ['IL', 'NM', 'NY', 'TX', 'WA'];
+ 
+} 
+ }
+ question7();
 
-while( i < 6 ){
+function question8() {
+ var statesArray = ['IL', 'NM', 'NY', 'TX', 'WA'];
+
+while( i < 6 ) {
   var stateQuestion = prompt(statesLived);
   var properState = stateQuestion.toUpperCase();
   if (properState === (statesArray[0] || statesArray[1] || statesArray[2] || statesArray[3] || statesArray[4])){
@@ -107,4 +136,5 @@ while( i < 6 ){
   }
   i++;
 }
-alert('Congratulations ' + nameYou + ' .  You did fantastic in this game.')
+}
+question8();
