@@ -10,10 +10,9 @@
 //add 7th question.  multiple correct answers as array.  Quess state I have lived in?  6 tries.
 // display all possible answers at the end
 //keep tally of total correct numbers.  END tell user with NAME how they did with positive message
-
 //Use prompt for input & ALERT for output.  NO FUNCTIONS
 //Use for & while for question 6 & 7th
-//started 2pm
+
 var name = ('Hi there visitor.  What is your name?');
 var carlos = ('Do you know Carlos R. Castillo?');
 var major = ('Was Carlos\'s first major in college Computer Science?');
@@ -22,9 +21,8 @@ var dog = ('Does Carlos like dogs?');
 var cat = ('Does Carlos like cats?');
 var pokemon = ('How many types of pokemon are in Carlos Pokedex?  You have a total of 4 chances.  hint: it\'s above 300.');
 var pokemonNumber = 333;
-var statesLived = ('Guess one state Carlos has lived in?  hint: I have lived in 5 states?  You have 6 tries.');
+var statesLived = ('Guess one state Carlos has lived in?  Use 2 letter abbreviation!  hint: I have lived in 5 states?  You have 6 tries.');
 
-/*
 var nameYou = prompt(name);
 alert('Nice to meet you ' + nameYou + '.  I guess we\'re not strangers anymore.');
 console.log('User typed ' + nameYou + ' for their name');
@@ -90,30 +88,23 @@ while( i < 4 ){
     console.log('You guessed the correct number. ' + pokeQuestion + ' pokemon.');
     break;
   }
-    i++;
-}*/
-//add 7th question.  multiple correct answers as array.  Quess state I have lived in?  6 tries.
-// display all possible answers at the end
-//keep tally of total correct numbers.  END tell user with NAME how they did with positive message
-
-//Use prompt for input & ALERT for output.  NO FUNCTIONS
-//Use for & while for question 6 & 7th
-
+  i++;
+}
+var i = 0;
 var statesArray = ['IL', 'NM', 'NY', 'TX', 'WA'];
-for (i = 0; i < 6; i++){
+
+while( i < 6 ){
   var stateQuestion = prompt(statesLived);
-  if ('IL' )
+  var properState = stateQuestion.toUpperCase();
+  if (properState === (statesArray[0] || statesArray[1] || statesArray[2] || statesArray[3] || statesArray[4])){
+    alert('Good job on your guess!  I have lived in ' + stateQuestion);
+    console.log('The correct state you guessed is ' + stateQuestion);
+    break;
+  }
+  else{
+    alert('I\'m sorry but Carlos has not lived in the state of ' + stateQuestion + '.');
+    console.log('Carlos has not lived in ' + stateQuestion + ' state.');
+  }
+  i++;
 }
-
-
-/*
-
-
-var state = prompt('Was Carlos born in WA state?');
-var properState = state.toUpperCase();
-if ((properState === 'YES') || (properState ==='Y')){
-  alert('Sadely no.  He was born in Texas :)');
-} else {
-  alert('How do you know he wasn\'t born in WA?  Do you know Carlos?');
-}
-*/
+alert('Congratulations ' + nameYou + ' .  You did fantastic in this game.')

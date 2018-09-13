@@ -1,6 +1,5 @@
 body {
     background-color: rgb(225, 247, 247);
-    /*background-image: url('../img/Sam1.jpg');*/
 }
 header{
     background-color: aquamarine;
@@ -16,11 +15,24 @@ h1{
 }
 main{
     font-size: 18px;
-    color: rgb(53, 10, 10)
+    color: rgb(53, 10, 10);
+}
+img{
+    height: 300px;
+    border-radius: 222px;
+}
+.profile{
+   float: right; 
+   margin-right: 1px;
+   border: 1px solid #f7f6f6; 
 }
 ol{
     list-style-position: outside;
     list-style-type: decimal;
+}
+ul{
+    list-style-position: outside;
+    list-style-type: square;
 }
 li{
     margin-left: 11px;
