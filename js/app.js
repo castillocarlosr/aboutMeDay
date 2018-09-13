@@ -16,55 +16,67 @@
 //started 2pm
 var name = ('Hi there visitor.  What is your name?');
 var carlos = ('Do you know Carlos R. Castillo?');
-var major = ('Was Carlos\'s first major in college Computer Science?')
-//3. Is What degree and career did Carlos have before going back to coding?
-//4. Dog
-//5. Cat
-var nameYou = prompt('Hi there stranger.  What is your name?');
+var major = ('Was Carlos\'s first major in college Computer Science?');
+var career = ('Carlos holds a Bachelor of Science degree.  Is it in Biology?');
+var dog = ('Does Carlos like dogs?');
+var cat = ('Does Carlos like cats?');
+var pokemon = ('How many types of pokemon are in Carlos Pokédex?');
+var pokemonNumber = 333;
+
+var nameYou = prompt(name);
 alert('Nice to meet you ' + nameYou + '.  I guess we\'re not strangers anymore.');
 console.log('User typed ' + nameYou + ' for their name');
 
-carlos = prompt('Do you know Carlos R. Castillo?');
-var properCarlos = carlos.toUpperCase();
+var carlosKnow = prompt(carlos);
+var properCarlos = carlosKnow.toUpperCase();
 if ((properCarlos === 'YES') || (properCarlos ==='Y')){
   alert('Hi there friend!  It is always a pleasure to see you again.');
 } else {
   alert('You should get to know him.  He is an amazing coder and overall person!');
 }
-console.log('The user said ' + carlos + ' to knowing Carlos.');
+console.log('The user typed ' + carlosKnow + ' to knowing Carlos.');
 
-/*
-var dog = prompt('Does Carlos have a dog?  Please answer YES or NO only.');
-var properDog = dog.toUpperCase();
-if ((properDog === 'YES') || (properDog ==='Y')){
-  alert('He has a beautiful black labrador!');
+var majorQuestion = prompt(major);
+var properMajorQuestion = majorQuestion.toUpperCase();
+if ((properMajorQuestion === 'YES') || (properMajorQuestion ==='Y')){
+  alert('Correct.  Carlos first semester did start out as computer science before switching to another science degree.');
+} else {
+  alert('Actually, Carlos\'s love of coding was there from the beginning.  Unfortunatly he did change majors after the 1st semeter.');
+}
+console.log('The user typed ' + majorQuestion + ' to Computer Science being his first major.')
+
+var careerQuestion = prompt(career);
+var properCareerQuestion = careerQuestion.toUpperCase();
+if ((properCareerQuestion === 'YES') || (properCareerQuestion ==='Y')){
+  alert('He actually holds a degree in Chemistry.');
+} else {
+  alert('Correct.  His degree is actually in Chemistry.');
+}
+console.log('The user typed ' + careerQuestion + ' to Carlos having a Biology degree.');
+
+var dogQuestion = prompt(dog);
+var properDogQuestion = dogQuestion.toUpperCase();
+if ((properDogQuestion === 'YES') || (properDogQuestion ==='Y')){
+  alert('He has a beautiful black labrador!  He likes to run outside and be lazy inside.');
 } else {
   alert('Well he does have a dog that happens to be cross-eyed and melts your heart!');
 }
+console.log('The user typed ' + dogQuestion + 'to Carlos having a dog.');
 
-var cat = prompt('Does Carlos have a cat?  Please answer YES or NO only.');
-var properCat = cat.toUpperCase();
-if ((properCat === 'YES') || (properCat ==='Y')){
+var catQuestion = prompt(cat);
+var properCatQuestion = catQuestion.toUpperCase();
+if ((properCatQuestion === 'YES') || (properCatQuestion ==='Y')){
   alert('He has a beautiful black Maine Coon!');
 } else {
-  alert('Well he does have a cat as well that will never ever leave you alone.  Ever!');
+  alert('Well he does have a cat as well that will show you so much love as well.');
 }
+console.log('User typed ' + catQuestion + ' to Carlos having a cat.');
 
-var run = prompt('Carlos likes to run outside.  Does he take one of his pets with him for a run?');
-var properRun = run.toUpperCase();
-if ((properRun === 'YES') || (properRun ==='Y')){
-  alert('Yup.  He takes his black lab on 5K runs!');
-} else {
-  alert('Semi-correct.  He will not take his cat for outside runs.');
-}
+var pokeQuestion = prompt(pokemon);
+while ()
 
-var pizza = prompt('Does Carlos like pizza?');
-var properPizza = pizza.toUpperCase();
-if ((properPizza === 'YES') || (properPizza ==='Y')){
-  alert('Trick question.  Carlos likes just about any kind of food');
-} else {
-  alert('Who doesn\'t like a good pizza');
-}
+/*
+var pokeQuestion = prompt(pokemon)
 
 var state = prompt('Was Carlos born in WA state?');
 var properState = state.toUpperCase();
@@ -73,12 +85,4 @@ if ((properState === 'YES') || (properState ==='Y')){
 } else {
   alert('How do you know he wasn\'t born in WA?  Do you know Carlos?');
 }
-
-console.log('Expect some yes & no questions.  Let\'s get formality out of the way.  What is your name? ' + name);
-console.log('Is the amazing student\'s name Carlos? ' + carlos);
-console.log('Does Carlos have a dog? ' + dog);
-console.log('Does Carlos have a cat? ' + cat);
-console.log('Carlos likes to run outside.  Does he take one of his pets with him for a run? ' +run);
-console.log('Does Carlos like pizza? ' + pizza);
-console.log('Was Carlos born in WA state? ' + state);
 */
