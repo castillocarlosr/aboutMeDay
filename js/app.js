@@ -21,7 +21,8 @@ var dog = ('Does Carlos like dogs?');
 var cat = ('Does Carlos like cats?');
 var pokemon = ('How many types of pokemon are in Carlos Pokedex?  You have a total of 4 chances.  hint: it\'s above 300.');
 var pokemonNumber = 333;
-var statesLived = ('Guess one state Carlos has lived in?  Use 2 letter abbreviation!  hint: I have lived in 5 states?  You have 6 tries.');
+var statesLived = ('Guess one state Carlos has lived in?  Use 2 letter abbreviation!  hint: I have lived in 5 states?  You have a total of 6 tries.');
+var i = 0;
 
 function question1() {
  var name = prompt('Hi there visitor.  What is your name?');
@@ -30,8 +31,6 @@ function question1() {
   console.log('User typed ' + name + ' for their name');
 }
 question1();
-
-
 
 function question2() {
 //var carlos = ('Do you know Carlos R. Castillo?'); 
@@ -70,7 +69,6 @@ console.log('The user typed ' + careerQuestion + ' to Carlos having a Biology de
 }
 question4();
 
-
 function question5() {
 var dogQuestion = prompt(dog);
 var properDogQuestion = dogQuestion.toUpperCase();
@@ -95,8 +93,7 @@ console.log('User typed ' + catQuestion + ' to Carlos having a cat.');
 }
 question6();
 
-var i = 0;
-
+//Note for Carlos.  use parseInt for question 7  last update 10am friday
  function question7() {
  while( i < 4 ){
   var pokeQuestion = prompt(pokemon);
@@ -117,24 +114,29 @@ var i = 0;
  
 } 
  }
- question7();
+question7();
+
+//var questionArray = [question1, question2, question3, question4, question5, question6];
+var statesArray = ['IL', 'NM', 'NY', 'TX', 'WA'];
+//var stateCorrect = true;
 
 function question8() {
- var statesArray = ['IL', 'NM', 'NY', 'TX', 'WA'];
-
-while( i < 6 ) {
+getMeOut: for( var j = 0 ; j < 6; j++ ) {
   var stateQuestion = prompt(statesLived);
-  var properState = stateQuestion.toUpperCase();
-  if (properState === (statesArray[0] || statesArray[1] || statesArray[2] || statesArray[3] || statesArray[4])){
-    alert('Good job on your guess!  I have lived in ' + stateQuestion);
-    console.log('The correct state you guessed is ' + stateQuestion);
-    break;
-  }
-  else{
-    alert('I\'m sorry but Carlos has not lived in the state of ' + stateQuestion + '.');
-    console.log('Carlos has not lived in ' + stateQuestion + ' state.');
-  }
-  i++;
-}
+  //var properState = stateQuestion.toUpperCase();
+    for (var k = 0; k < statesArray.length; k++){ 
+      if (stateQuestion.toUpperCase() === statesArray[k]){
+        alert('Good job on your guess!  I have lived in ' + stateQuestion + '.');
+        console.log('The correct state you guessed is ' + stateQuestion);
+        break getMeOut;
+      } 
+      else if( k === statesArray.length-1){
+        alert('I\'m sorry but Carlos has not lived in the state of ' + stateQuestion + '.');
+        console.log('Carlos has not lived in ' + stateQuestion + ' state.');
+      }
+    }
+
+      }
+    alert('Carlos has lived in TX, NM, IL, NY, and WA.');
 }
 question8();
