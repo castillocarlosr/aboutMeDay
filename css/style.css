@@ -18,13 +18,18 @@ main{
     color: rgb(53, 10, 10);
 }
 img{
+    
     height: 300px;
     border-radius: 222px;
 }
-.profile{
-   float: right; 
-   margin-right: 1px;
-   border: 1px solid #f7f6f6; 
+section.profile{
+    text-align: center;    
+    width : 536px;
+    padding-left : 20px;
+    padding-right : 20px;
+    margin : 200px auto 0 auto;
+    position : relative;
+    z-index : 6; 
 }
 ol{
     list-style-position: outside;
@@ -39,7 +44,17 @@ li{
 }
 footer{
     background-image: url(../img/Sam1.jpg);
-    padding: 150px;
+    padding: 200px;
     font-size: 20px;
     color: white;
 }
+/* #demoCode {
+    float: right;
+    background-image: url(../img/Screen\ Shot\ 2018-09-16\ at\ 10.01.18\ PM.png);
+    border-image-width: 100px;
+    top: 55px;
+    right: 0;
+    width: 300px;
+    height: 900px;
+    border: 3px solid #73AD21;
+} */

@@ -20,7 +20,7 @@ var career = ('Carlos holds a Bachelor of Science degree.  Is it in Biology?');
 var dog = ('Does Carlos like dogs?');
 var cat = ('Does Carlos like cats?');
 var pokemon = ('How many types of pokemon are in Carlos Pokedex?  You have a total of 4 chances.  hint: it\'s above 300.');
-var pokemonNumber = 333;
+var pokemonNumber = 341;
 var statesLived = ('Guess one state Carlos has lived in?  Use 2 letter abbreviation!  hint: I have lived in 5 states?  You have a total of 6 tries.');
 var i = 0;
 
