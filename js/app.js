@@ -14,13 +14,13 @@
 //Use for & while for question 6 & 7th
 
 //var name = ('Hi there visitor.  What is your name?');
-var carlos = ('Do you know Carlos R. Castillo?');
+var carlos = ('Do you know Carlos Castillo?');
 var major = ('Was Carlos\'s first major in college Computer Science?');
 var career = ('Carlos holds a Bachelor of Science degree.  Is it in Biology?');
 var dog = ('Does Carlos like dogs?');
 var cat = ('Does Carlos like cats?');
-var pokemon = ('How many types of pokemon are in Carlos Pokedex?  You have a total of 4 chances.  hint: it\'s above 300.');
-var pokemonNumber = 341;
+var pokemon = ('For you Pokemon-GO players, how many types of pokemon are in Carlos Pokedex?  You have a total of 4 chances.  hint: it\'s above 400.');
+var pokemonNumber = 419;
 var statesLived = ('Guess one state Carlos has lived in?  Use 2 letter abbreviation!  hint: I have lived in 5 states?  You have a total of 6 tries.');
 var i = 0;
 
@@ -39,7 +39,7 @@ var properCarlos = carlosKnow.toUpperCase();
 if ((properCarlos === 'YES') || (properCarlos ==='Y')){
   alert('Hi there friend!  It is always a pleasure to see you again.');
 } else {
-  alert('You should get to know him.  He is an amazing coder and overall person!');
+  alert('You should get to know him.  He is an amazing coder and overall great person!');
 } 
 console.log('The user typed ' + carlosKnow + ' to knowing Carlos.');
 }
@@ -97,13 +97,27 @@ question6();
  function question7() {
  while( i < 4 ){
   var pokeQuestion = prompt(pokemon);
-   if (pokeQuestion < pokemonNumber){
-     alert('You\'re far too low.  Try a higher number.');
+   if (pokeQuestion < (pokemonNumber - 50)){
+     alert('You are far too low.  Try a higher number.');
      console.log('You guessed ' + pokeQuestion + ' that is too low.');
    }
-  else if (pokeQuestion > pokemonNumber){
-    alert('You\'re guess is too high.  Carlos is not that good yet.');
+  else if (pokeQuestion > (pokemonNumber + 50)){
+    alert('Your guess is too high.  Carlos is not that good yet.');
     console.log('Your guess of ' + pokeQuestion + ' is too high.');
+  }
+  else if ((pokeQuestion < pokemonNumber) && (pokeQuestion > pokemonNumber - 50) )
+  {
+    //updated May19, 2019.  I like using the brackets layout like I do in C#
+    //So you might see more of this future Carlos or anyone else looking at my code.
+    alert('You\'re getting closer.  Just a bit higher.');
+    console.log('Your guess of ' + pokeQuestion + ' is close.');
+  }
+  else if ((pokeQuestion > pokemonNumber) && (pokeQuestion < pokemonNumber + 50) )
+  {
+    //updated May19, 2019.  I like using the brackets layout like I do in C#
+    //So you might see more of this future Carlos or anyone else looking at my code.
+    alert('You\'re getting closer.  Just a bit higher.');
+    console.log('Your guess of ' + pokeQuestion + ' is close.');
   }
   else if (pokemonNumber === parseInt(pokeQuestion)) {
     alert('You guessed correctly.  That is amazing.  I have ' + pokeQuestion + ' so far.');
