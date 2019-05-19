@@ -22,6 +22,11 @@ Do you know Carlos?  How many pokemon does he have?
 [About Me](https://castillocarlosr.github.io/aboutMeDay3)
 https://castillocarlosr.github.io/aboutMeDay3
 
+## ScreenShot
+![](img/ScreenOne.png?raw=true)
+![](img/ScreenTwo.png?raw=true)
+![view sample code](img/ScreenThree.png?raw=true)
+
 ### Authors
 * **Carlos R. Castillo** - [GitHub](https://github.com/castillocarlosr)
 
@@ -30,5 +35,5 @@ https://castillocarlosr.github.io/aboutMeDay3
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
