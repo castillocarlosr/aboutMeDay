@@ -16,11 +16,14 @@ Simply click on the link below to visit my early about me page.
 ```
 Do you know Carlos?  How many pokemon does he have?
 ```
+## Update/Created
+* Created around Sept. 2018
+* Last update: on README.md May 2019
 
 ## Website
 
-[About Me](https://castillocarlosr.github.io/aboutMeDay3)
-https://castillocarlosr.github.io/aboutMeDay3
+[About Me](https://castillocarlosr.github.io/aboutMeDay)
+https://castillocarlosr.github.io/aboutMeDay
 
 ## ScreenShot
 ![](img/ScreenOne.png?raw=true)
